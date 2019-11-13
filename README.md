@@ -1,3 +1,6 @@
+# Note: This is Ubiquity6's fork of bugsnag-react-native
+Due to an iOS build error in `cocoa/BugsnagReactNative.m` we have to use a fork. In order to use the fork, we need to build the javascript assets. I tried adding a `postinstall` step to package.json to build the javascript assets automatically however that failed to run, most likely due to conflicting babel versions in the ubiquity6 monorepo. Instead we are going to build the `lib` folder and commit the artifacts. At least until we upgrade react-native, at which point we can see if we can ditch our fork.
+
 # Bugsnag error monitoring & exception reporter for React Native
 [![Documentation](https://img.shields.io/badge/documentation-2.23.2-blue.svg)](http://docs.bugsnag.com/platforms/react-native/)
 
