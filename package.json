@@ -25,7 +25,6 @@
     "react-native.config.js"
   ],
   "scripts": {
-    "postinstall": "yarn prepublish",
     "prepublish": "mkdir -p lib && babel --source-maps --out-dir='lib' --ignore='__tests__' src",
     "test:unit:js": "jest --coverage src/__tests__",
     "test:lint:js": "standard",
